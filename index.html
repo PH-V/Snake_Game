@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="bg-music">
+        <audio src="bg-music.mp3" loop></audio>
+         <button class="music-btn">
+            <i class="fas fa-volume-up on"></i>
+            <i class="fas fa-volume-mute off"></i>
+         </button>
+    </div>
+    
+    <div class="nav">
+        <div class="games"><a href="Games/snake.html">Snake</a></div>
+        <div class="games"><a href="Games/leaderboard.html">Leaderboard</a></div>
+    </div>
+
+    <footer class="site-footer">
+        <div>© 2021 Copyright: <span id="name">Vakho Phruidze</span></div>
+        <a class="github-link" href="https://github.com/PH-V/Project"><i class="fab fa-github"></i></a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body, html {
+    height: 100vh;
+    width: 100vw;
+    background-color: #4d2d5c;
+    display: flex;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#game-area {
+    align-self: center;
+    margin: auto;
+    display: none;  
+}
+
+
+/* Home button */
+#home-button {
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    margin: 0;
+    padding: .3em;
+    opacity: 0.5;
+    align-self: flex-start;
+}
+
+#home-button:hover {
+    opacity: 1;
+}
+
+
+/* Speed Controller */
+#speed-range {
+    background-color: #232323;
+    align-self: center;
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 1px 3px coral;
+}
+
+#speed-range button {
+    background:linear-gradient(to bottom,rgb(73, 64, 64) 5%, #f77f00 100%);
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: transparent;
+	border-radius: 28px;
+	border: none;
+	cursor: pointer;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 19px;
+}
+
+#speed-range button:hover {
+	background:linear-gradient(to top, rgb(73, 64, 64) 5%, #f77f00 100%);
+	background-color:#bab1ba;
+}
+
+
+#speed-range button:active {
+    border: 1px solid black;
+	position:relative;
+	top:1px;
+}
+
+
+/* Score */
+#score {
+    color: coral;
+    font-size: 30px;
+}
+
+h3 {
+    color: white;
+    text-shadow: 2px 1px 3px coral;
+}
+
+
+/* Pop-up */
+#pop-up {
+    min-height: 100vh;
+    display: none;
+}
+
+.text-center {
+	color:#fff;	
+	text-transform: uppercase;
+    font-size: 40px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box span {
+    background: linear-gradient(to top, rgb(0, 0, 0), #f77f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box {
+    position: absolute;
+    width: 259px;
+    height: 387.188px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+    background-color: black;
+	border-radius: 3px;
+    padding: 70px 100px;
+    
+}
+
+.input-container input {
+	display: block;
+	margin: 2em 1.25em;
+	border: none;
+	padding-left: 12px;
+	width: 9ch;
+	background: repeating-linear-gradient(90deg, 
+    white 0, white 2ch, 
+		transparent 0, transparent 3ch) 
+		0 100%/ 8ch 2px no-repeat;
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2ch;
+    text-transform: uppercase;
+    color: white;
+}
+.input-container input:focus {
+    outline: none;
+    color: white;
+}
+
+.btn {
+	color:#fff;
+    background-color:#e74c3c;
+    opacity: .65;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding: 10px 20px;
+	text-transform: uppercase;
+    margin: auto 69px;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative; 
+}
+.btn:hover {
+    opacity: 1;
+}
+.btn:active {
+    border: 1px solid black;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+	top:-12px;
+	font-size:12px;
+	
+}
+
+.secondary {
+    font-size: 1rem;
+}
+
+#final-score {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 1px 3px coral;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+/* OverLay for pop-up */
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.103);
+    pointer-events: none;
+}
+#overlay.active {
+    opacity: 1;
+}

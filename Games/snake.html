@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="snakeStyle.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <button id="home-button"><a href="../index.html"><img src="https://img.icons8.com/nolan/64/home-page.png"/></a></button>
+    <div id="game-area">
+        <h3>Score: <span id="score"></span></h3>
+        <canvas id="canvas" width="700" height="500"></canvas>
+    </div>
+
+
+    <div id="speed-range" class="visible">
+        <h3>Choose The Speed</h3>
+        <button data-speed id="100">1x</button>
+        <button data-speed id="50">5x</button>
+        <button data-speed id="25">10x</button>
+        <button data-speed id="5">20x</button>
+    </div>
+
+
+    <div id="pop-up">
+        <div class="box">
+            <form>
+                <span class="text-center text">GAME OVER</span>
+                <div class="text-center" ><p id="final-score">0</p><p> Points</p></div>
+                <span class="text-center text secondary">Enter your initials</span>
+            <div class="input-container">
+                <input maxlength='3' value='AAA' id="initial">
+            </div>
+                <button type="button" class="btn">submit</button>
+        </form>	
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <script type="module" src="snakeScript.js"></script>
+</body>
+</html>

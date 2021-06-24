@@ -1,0 +1,159 @@
+body {
+    
+    background-image: url("space(1).gif");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+
+}
+
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.nav {
+    transform: scale(2);
+    border-style: solid;
+    border-color: #f77f00;
+    border-width: .125em 0;
+    box-shadow: -.25em 0 0 -.125em #f77f00,
+                .25em 0 0 -.125em #f77f00;
+    position: relative;
+    z-index: 1;
+    margin: 5rem auto;
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 15rem;
+}
+
+.nav::before {
+    background-color: inherit;
+    border: inherit;
+    border-width: 0 .125em;
+    bottom: .25em;
+    content: '';
+    left: -.21em;
+    pointer-events: none;
+    position: absolute;
+    top: .25em;
+    right: -.21em;
+    z-index: -1;
+}
+
+.nav::after {
+    background: inherit;
+    border: inherit;
+    border-width: 0 .125em;
+    bottom: .125em;
+    content: '';
+    left: -.2em;
+    position: absolute;
+    top: .125em;
+    right: -.2em;
+    z-index: -2;
+}
+
+.games a:hover {
+    background: linear-gradient(to bottom, black, #f77f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.games a {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), #f78000be);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: unset;
+    border-style: solid;
+    border-color: #f77f00;
+    border-width: .125em 0;
+    box-shadow: -.25em 0 0 -.125em #f77f00,
+                .25em 0 0 -.125em #f77f00;
+    
+    position: relative;
+    z-index: 1;
+    margin: 1rem auto;
+    padding: .5rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.games a:active {
+    background: linear-gradient(to top, black, #f77f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #f77f00;
+}
+
+/* Music toggler */
+.bg-music {
+    padding: 0.25em;
+    height: 5vh;
+}
+.music-btn {
+    background-color: transparent;
+    color: coral;
+    font-size: 2rem;
+    border: none;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+.music-btn:hover {
+    opacity: 1;
+}
+
+.music-btn .on {
+    width: 32px;
+    height: 32px;
+}
+
+.music-btn .off {
+    display: none;
+}
+
+/* Footer */
+footer {
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    height: 1;
+    background: #9555f4cb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-link {
+    font-size: 55px;
+    display: block;
+    float: right;
+    color: balck;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+
+.github-link:hover {
+    color: black;
+}
+
+footer div {
+    padding-top: 25px;
+    margin: 0 1em;
+    color: rgba(255, 127, 80, 0.75);
+}
+footer span {
+    color: turquoise;
+}

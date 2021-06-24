@@ -1,0 +1,46 @@
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    font-family:  'Press Start 2P', cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-shadow: 1px 3px 1px coral;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+.lables {
+    padding-bottom: 2rem;
+}
+
+table{
+    width: 75%;
+    font-size: 1.75rem;
+}
+
+th {
+    padding: 1.5rem 0;
+}
+
+#home-button {
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    margin: 0;
+    padding: .3em;
+    opacity: 0.5;
+    align-self: flex-start;
+}
+
+#home-button:hover {
+    opacity: 1;
+}
